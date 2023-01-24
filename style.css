@@ -23,8 +23,8 @@ body{
 
 header{
     width: 100%;
-    background-color: #333;
-    border-bottom: 4px solid rgb(177, 71, 1);
+    background: linear-gradient(to right,#5a6cf1, #9443fe);
+    border-bottom: 4px solid black;
     position: fixed;
 }
 
@@ -51,10 +51,10 @@ header h1{
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 3px;
     bottom: 0;
     left: 0;
-    background-color: rgb(173, 34, 216);
+    background-color: #5a6cf1;
     transform-origin: bottom center;
     transition: 0.25s ease-out;
 }
@@ -125,7 +125,7 @@ header h1{
 
 
 .navbar .navLinks ul .active a {
-    color: rgb(194, 82, 8);
+    color: #9443fe;
     font-weight: 600;
     
 }
@@ -151,12 +151,14 @@ header h1{
 main{
     flex: 1 0 auto;
     height: 100vh   ;
-    background-color: rgb(116, 192, 132);
+    background-color: rgb(208, 212, 209);
 }
 
 footer {
-    background-color: #333;
-    border-top: 4px solid rgb(177, 71, 1);
+    background-color: rgb(0, 0, 0);
+    border-top: 4px solid transparent;
+    border-image: linear-gradient(to right,#5a6cf1, #9443fe);
+    border-image-slice: 1;
     color: #f1f1f1;
     display: flex;
     justify-content: space-around;
@@ -172,7 +174,9 @@ footer {
 .footerSources h2,
 .footerCredit h2 {
     font-size: 25px;
-    color: rgb(194, 82, 8);
+    background: linear-gradient(to right,#5a6cf1, #9443fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
