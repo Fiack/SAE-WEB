@@ -34,6 +34,7 @@ header h1{
 
 .navbar{
     display: flex;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
@@ -42,6 +43,7 @@ header h1{
 .navbar li a {
     position: relative;
     cursor: pointer;
+    color: #333;
 }
 
 .navbar li a::after {
@@ -66,13 +68,10 @@ header h1{
     font-size: 5vw;
 }
 
-.navbar{
-    justify-content: center;
-}
 
 .navbar .logo{
-    height: 10vw;  
-    padding-right: 30px;     
+    height: 4vw;  
+    margin: 15px
 }
 
 .navbar .hamburger{
@@ -115,10 +114,6 @@ header h1{
     flex-direction: column;
 }
 
-.navbar li a {
-    color: #333;
-}
-
 .navbar .navLinks ul li {
     margin: 25px 0;
     font-size: 1.2em;
@@ -139,19 +134,18 @@ header h1{
 
 .navbar .hamburger {
     display: block;
-    position: absolute;
+    position: relative;
     height: 2vw;
-    right: 60px;
-    top: 60px;
+    margin: 15px
 
 }
 
 .croix{
     display: none;
-    position: fixed;
-    right: 60px;
-    top: 60px;  
+    position: relative;
     height: 2vw;
+    margin: 15px
+    
 }
 
 main{
@@ -165,7 +159,7 @@ footer {
     border-top: 4px solid rgb(177, 71, 1);
     color: #f1f1f1;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     padding: 25px 0 35px 0;
 }
@@ -205,9 +199,16 @@ footer {
 }
 
 .listeCredit img{
-    height: 14vh;
+    height: 12vh;
 }
 
 
 @media all and (max-width: 1000px) {
+    .listeCredit img{
+        height: 10vw;
+    }
+    .navbar .logo{
+        height: 7vw;  
+        margin: 15px
+    }
 }
