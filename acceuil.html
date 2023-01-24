@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Métier de l'informatique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="acceuil.html"><img src="Image/logoIUT.png" alt="logo de l'iut d'orléans" class="logo"></a>
+            <h1>Métier de l'informatique</h1>
+            <div class="navLinks">
+                <ul>
+                    <li class="active"><a href="programmation.html">Programmation et développement</a></li>
+                    <li><a href="gestion.html">Gestion et management de donées</a></li>
+                    <li><a href="cybersecurite.html">Cybersécurité</a></li>
+                    <li><a href="communications.html">Communications et réseaux</a></li>
+                    <li><a href="gestion.html">Gestion</a></li>
+                </ul>
+            </div>
+            <img src="Image/open.png" alt="" class="hamburger">
+            <img src="Image/close.png" alt="" class="croix">
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
+    
+    <footer>
+        <section class="bloc footerMedias">
+            <h2>Nos Sources</h2>
+            <ul class="listeMedias">
+                <li><p>sources</p></li>
+                <li><p>sources</p></li>
+                <li><p>sources</p></li>
+                <li><p>sources</p></li>
+                <li><p>sources</p></li>
+            </ul>
+        </section>
+
+        <section class="bloc footerContact">
+            <h2>Nos Contacts</h2>
+            <ul class="listeContact">
+                <li>NOM Prénom</li>
+                <li>NOM Prénom</li>
+                <li>NOM Prénom</li>
+                <li>NOM Prénom</li>
+                <li>NOM Prénom</li>
+            </ul>
+        </section>
+        
+        <section class="bloc credit">
+            <h2>Les crédits</h2>
+            <ul class="listeCredit">
+                <li><img src="Image/logoIUT.png" alt="logo de l'iut informatique"></li>
+                <li><p>SAE web 2.01</p></li>
+                <li><p>Tous droits réservé</p></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".hamburger")
+    const navLinks = document.querySelector(".navLinks")
+    const croix = document.querySelector(".croix")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobileMenu')
+    menuHamburger.classList.toggle('open')
+    croix.classList.toggle('close')
+    })
+
+    croix.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobileMenu')
+    menuHamburger.classList.toggle('open')
+    croix.classList.toggle('close')
+    })
+</script>
+
+</html>
