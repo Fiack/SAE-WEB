@@ -24,11 +24,15 @@ body{
 header{
     width: 100%;
     background-color: #333;
-    border-bottom: 4px solid rgb(177, 71, 1)
+    border-bottom: 4px solid rgb(177, 71, 1);
+    position: fixed;
+}
+
+header h1{
+    font-size: 250%;
 }
 
 .navbar{
-    padding: 25px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -48,7 +52,7 @@ header{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgb(194, 82, 8);
+    background-color: rgb(173, 34, 216);
     transform-origin: bottom center;
     transition: 0.25s ease-out;
 }
@@ -58,57 +62,96 @@ header{
     transform-origin: bottom cen;
 }
 
-.navbar .logo{
-    height: 14vh;
-}
-
 .titre{
-    font-weight: bold;
-    color: rgb(194, 82, 8);
-    font-size: 3vw;
-    margin-left: 50px;
-    margin-right: 20px;
+    font-size: 5vw;
 }
 
-.navLinks{
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end;
+.navbar{
+    justify-content: center;
 }
 
-.navbar .navLinks ul {
-    display: flex;
+.navbar .logo{
+    height: 10vw;  
+    padding-right: 30px;     
 }
-  
+
+.navbar .hamburger{
+    display: block;
+    z-index: 2;
+}
+
+.navbar .hamburger.open{
+    display: none;
+}
+
+.navbar .croix.close{
+    display: block;
+    z-index: 2;
+}
+
+.navLinks {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100vh;
+    transition: all 0.5s ease;
+    z-index: 2;
+    text-align: center;
+}
+
+.navLinks.mobileMenu{
+    margin-top: 0;
+}
+
+.navLinks ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar li a {
+    color: #333;
+}
+
 .navbar .navLinks ul li {
-    margin: 0 25px;
+    margin: 25px 0;
+    font-size: 1.2em;
 }
   
 .navbar .navLinks ul li a{
     font-size: 150%;
 }
 
+
 .navbar .navLinks ul .active a {
     color: rgb(194, 82, 8);
     font-weight: 600;
+    
 }
 
-.active a{color: rgb(194, 82, 8);}
+
 
 .navbar .hamburger {
-    display: none;
+    display: block;
     position: absolute;
-    right: 35px;
-    top: 98px;
-    width: 35px;
+    height: 2vw;
+    right: 60px;
+    top: 60px;
+
 }
 
 .croix{
     display: none;
     position: fixed;
-    right: 35px;
-    top: 98px;
-    width: 35px;
+    right: 60px;
+    top: 60px;  
+    height: 2vw;
 }
 
 main{
@@ -132,28 +175,27 @@ footer {
 }
 
 .footerContact h2,
-.footerMedias h2 {
+.footerSources h2,
+.footerCredit h2 {
     font-size: 25px;
     color: rgb(194, 82, 8);
 
 }
 
-.footerContact li {
+.footerContact li,
+.footerSources li,
+.footerCredit li {
     padding: 5px 0;
     font-size: 20px;
 }
 
 .listeContact,
-.listeMedias {
+.listeSources,
+.listeCredit {
     padding: 5px 0;
 }
 
-.listeMedias img {
-    width: 30px;
-    margin: 10px 10px;
-}
-
-.listeMedias a {
+.listeSources a {
     position: relative;
     right: 10px;
     color: #f1f1f1;
@@ -168,68 +210,4 @@ footer {
 
 
 @media all and (max-width: 1000px) {
-    .titre{
-        font-size: 5vw;
-    }
-
-    .navbar{
-        padding: 35px;
-        justify-content: center;
-    }
-  
-    .navbar .logo{
-        height: 14vw;       
-    }
-  
-    .navbar .hamburger{
-        display: block;
-        z-index: 2;
-    }
-
-    .navbar .hamburger.open{
-        display: none;
-    }
-  
-    .navbar .croix.close{
-        display: block;
-        z-index: 2;
-    }
-
-    .navLinks {
-        top: 0;
-        left: 0;
-        position: fixed;
-        background-color: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(7px);
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -100vh;
-        transition: all 0.5s ease;
-        z-index: 2;
-    }
-  
-    .navLinks.mobileMenu{
-        margin-top: 0;
-    }
-
-    .navLinks ul {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .navbar li a {
-        color: #333;
-    }
-
-    .navbar .navLinks ul .active a {
-        color: black;
-    }
-
-    .navbar .navLinks ul li {
-        margin: 25px 0;
-        font-size: 1.2em;
-    }
 }

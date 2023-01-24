@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Métier de l'informatique</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -30,9 +30,9 @@
     </main>
     
     <footer>
-        <section class="bloc footerMedias">
+        <section class="bloc footerSources">
             <h2>Nos Sources</h2>
-            <ul class="listeMedias">
+            <ul class="listeSources">
                 <li><p>sources</p></li>
                 <li><p>sources</p></li>
                 <li><p>sources</p></li>
@@ -52,7 +52,7 @@
             </ul>
         </section>
         
-        <section class="bloc credit">
+        <section class="bloc footerCredit">
             <h2>Les crédits</h2>
             <ul class="listeCredit">
                 <li><img src="Image/logoIUT.png" alt="logo de l'iut informatique"></li>
@@ -62,23 +62,4 @@
         </section>
     </footer>
 </body>
-
-<script>
-    const menuHamburger = document.querySelector(".hamburger")
-    const navLinks = document.querySelector(".navLinks")
-    const croix = document.querySelector(".croix")
-
-    menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobileMenu')
-    menuHamburger.classList.toggle('open')
-    croix.classList.toggle('close')
-    })
-
-    croix.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobileMenu')
-    menuHamburger.classList.toggle('open')
-    croix.classList.toggle('close')
-    })
-</script>
-
 </html>
