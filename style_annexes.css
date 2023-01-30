@@ -1,0 +1,32 @@
+main{
+    padding: 2vw;
+    margin-top: 5vw;
+}
+
+main p, main h2, main h3{
+    color: black;
+}
+
+main h2, main h3{
+    padding-bottom: 2vh;
+}
+
+main section{
+    padding: 1vw;
+    text-align: justify;
+}
+
+main li{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 5vh;
+    margin-right: 3vw;
+}
+  
+main li img{
+    height: 33vh;
+}
+
+main li:nth-child(odd){
+    flex-direction: row-reverse;
+  }
