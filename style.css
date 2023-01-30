@@ -23,7 +23,7 @@ body{
 
 header{
     width: 100%;
-    background: linear-gradient(to right,#5a6cf1, #9443fe);
+    background: linear-gradient(to right,#5a6cf1, #9443fe, #7c20f5);
     border-bottom: 4px solid black;
     position: fixed;
 }
@@ -84,7 +84,7 @@ header h1{
 }
 
 .navbar .croix.close{
-    display: block;
+    display: block; 
     z-index: 2;
 }
 
