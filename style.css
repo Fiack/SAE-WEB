@@ -15,6 +15,7 @@ li{ list-style: none; }
 
 
 body{
+    background-color: #f1f1f1;
     font-family: 'Verdana';
     display: flex;
     flex-direction: column;
@@ -26,6 +27,7 @@ header{
     background: linear-gradient(to right,#5a6cf1, #9443fe, #7c20f5);
     border-bottom: 4px solid black;
     position: fixed;
+
 }
 
 header h1{
@@ -150,7 +152,6 @@ header h1{
 
 main{
     flex: 1 0 auto;
-    height: 100vh   ;
     background-color: rgb(208, 212, 209);
 }
 
