@@ -1,6 +1,6 @@
 main{
     padding: 2vw;
-    margin-top: 8vh;
+    margin-top: 5vw;
 }
 
 main p, h2, h3{
@@ -53,6 +53,12 @@ main li:nth-child(odd){
     flex-direction: row-reverse;
 }
 
+
+@media screen and (max-widht: 1000px){
+    main {
+        margin-top: 8vw;
+    }
+}
 
 @media screen and (max-width: 800px) {
     main li {
