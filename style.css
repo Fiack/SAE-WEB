@@ -207,7 +207,7 @@ footer {
 }
 
 
-@media all and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .listeCredit img{
         height: 10vw;
     }

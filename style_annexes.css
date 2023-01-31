@@ -54,7 +54,7 @@ main li:nth-child(odd){
 }
 
 
-@media all and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     main li {
         flex-direction: column;
     }
