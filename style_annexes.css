@@ -1,6 +1,6 @@
 main{
     padding: 2vw;
-    margin-top: 5vw;
+    margin-top: 8vh;
 }
 
 main p, h2, h3{
@@ -46,7 +46,7 @@ main li{
 }
   
 main li img{
-    height: 33vh;
+    height: 20em;
 }
 
 main li:nth-child(odd){
@@ -63,5 +63,11 @@ main li:nth-child(odd){
     }
     img {
         object-fit: cover;
+    }
+    main li img{
+        height: 33vh;
+    }
+    p{
+        font-size: 150%;
     }
 }
