@@ -76,19 +76,7 @@ header h1{
     margin: 15px
 }
 
-.navbar .hamburger{
-    display: block;
-    z-index: 2;
-}
 
-.navbar .hamburger.open{
-    display: none;
-}
-
-.navbar .croix.close{
-    display: block; 
-    z-index: 2;
-}
 
 .navLinks {
     top: 0;
@@ -132,7 +120,32 @@ header h1{
     
 }
 
+.navbar .navClickable {
+    display: flex;
+}
 
+.navbar .homeBlanc {
+    display: block;
+    position: relative;
+    height: 2vw;
+    margin: 15px;
+}
+
+.navbar .homeBlanc.open {
+    display: none;
+}
+
+.navbar .homeNoir {
+    display: none;
+    position: relative;
+    height: 2vw;
+    margin: 15px;
+}
+
+.navbar .homeNoir.close {
+    display: block; 
+    z-index: 2;
+}
 
 .navbar .hamburger {
     display: block;
@@ -142,12 +155,21 @@ header h1{
 
 }
 
+.navbar .hamburger.open{
+    display: none;
+}
+
 .croix{
     display: none;
     position: relative;
     height: 2vw;
     margin: 15px
     
+}
+
+.navbar .croix.close{
+    display: block; 
+    z-index: 2;
 }
 
 main{
