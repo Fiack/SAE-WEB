@@ -8,14 +8,11 @@ main p, h2, h3{
 
 h2{
     font-size: 250%;
+    padding-bottom: 2vh;
 }
 
 h3{
     font-size: 150%;
-}
-
-h2, h3{
-    padding-bottom: 2vh;
 }
 
 h2, main p{
@@ -24,6 +21,7 @@ h2, main p{
 
 main p{
     line-height: 1.75em;
+    margin-top: 0.75em;
 }
 
 main section{
