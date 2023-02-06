@@ -152,6 +152,7 @@ header h1{
 
 main{
     flex: 1 0 auto;
+    margin-top: 5vw;
 }
 
 footer {
@@ -207,7 +208,10 @@ footer {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-device-width: 1000px) {
+    main {
+        margin-top: 9vw;
+    }
     .listeCredit img{
         height: 10vw;
     }
