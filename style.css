@@ -66,9 +66,7 @@ header h1{
     transform-origin: bottom cen;
 }
 
-.titre{
-    font-size: 5vw;
-}
+
 
 
 .navbar .logo{
@@ -232,13 +230,43 @@ footer {
 
 @media screen and (max-device-width: 1000px) {
     main {
-        margin-top: 9vw;
+        margin-top: 12vw;
     }
     .listeCredit img{
         height: 10vw;
     }
+
+    .navClickable .hamburger,
+    .navClickable .croix,
+    .navClickable .homeNoir,
+    .navClickable .homeBlanc
+    {
+        height:  4vh;
+    }
+
+    header h1{
+        font-size: 200%;
+    }
+
     .navbar .logo{
         height: 7vw;  
         margin: 15px
+    }
+}
+
+@media screen and (max-device-width: 600px) {
+    .navClickable .hamburger,
+    .navClickable .croix,
+    .navClickable .homeNoir,
+    .navClickable .homeBlanc
+    {
+        height:  3vh;
+    }
+
+    header h1{
+        font-size: 150%;
+    }
+    main {
+        margin-top: 18vw;
     }
 }

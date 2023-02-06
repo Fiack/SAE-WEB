@@ -1,0 +1,59 @@
+main h2, main h3,main p{
+    color: #333;
+}
+
+main{
+    background-color: #f1f1f1;
+    margin-top: 6vw;
+}
+
+img{
+    height: 15vw;
+}
+
+.mainIntro h2{
+    font-size: 300%;
+}
+
+.mainIntro p {
+    font-size: 150%;
+    text-align: center;
+    padding: 1em 3em 1em 3em;
+}
+
+.mainContenue h3 {
+    font-size: 200%;
+    margin-bottom: 1em;
+}
+
+.mainContenue p {
+    text-align: justify;
+}
+
+.mainIntro {
+    margin: 3em 0 3em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContenue ul li:nth-child(odd){
+    display: flex;
+}
+
+.mainContenue ul li:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mainContenue section {
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.mainContenue li {
+    margin: 4em 0 4em 0;
+}
