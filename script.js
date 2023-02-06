@@ -19,3 +19,21 @@ homeBlanc.classList.toggle('open')
 croix.classList.toggle('close')
 homeNoir.classList.toggle('close')
 })
+
+
+
+const header = document.querySelector("header")
+last = 0;
+
+window.addEventListener('scroll', function() {
+    act = window.scrollY;
+    if(act > 150){
+        if(act > last){
+            header.classList.add("cacher");
+        }
+        else{
+            header.classList.remove("cacher");
+        }
+    }
+    last = act;
+});
