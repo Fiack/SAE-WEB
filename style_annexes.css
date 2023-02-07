@@ -3,7 +3,7 @@ main{
 }
 
 main p, h2, h3{
-    color: black;
+    color: #333;
 }
 
 h2{
@@ -51,7 +51,7 @@ main li:nth-child(odd){
 }
 
 .mainIntro{
-    background-color: black;
+    background-color: #333;
     border: 4px solid transparent;
     border-image: linear-gradient(to right,#5a6cf1, #9443fe, #7c20f5);
     border-image-slice: 1;
