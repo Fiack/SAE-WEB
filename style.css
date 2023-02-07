@@ -109,7 +109,7 @@ header h1{
     text-align: center;
 }
 
-.navLinks.mobileMenu{
+.navLinks.open{
     margin-top: 0;
 }
 
@@ -134,34 +134,34 @@ header h1{
     
 }
 
-.navbar .navClickable {
+.navClickable {
     display: flex;
 }
 
-.navbar .homeBlanc {
+.homeBlanc {
     display: block;
     position: relative;
     height: 2vw;
     margin: 15px;
 }
 
-.navbar .homeBlanc.open {
+.homeBlanc.open {
     display: none;
 }
 
-.navbar .homeNoir {
+.homeNoir {
     display: none;
     position: relative;
     height: 2vw;
     margin: 15px;
 }
 
-.navbar .homeNoir.close {
+.homeNoir.open {
     display: block; 
     z-index: 2;
 }
 
-.navbar .hamburger {
+.hamburger {
     display: block;
     position: relative;
     height: 2vw;
@@ -169,7 +169,12 @@ header h1{
 
 }
 
-.navbar .hamburger.open{
+.hamburger:hover{
+    cursor: pointer;
+}
+
+
+.hamburger.open{
     display: none;
 }
 
@@ -178,13 +183,18 @@ header h1{
     position: relative;
     height: 2vw;
     margin: 15px
-    
 }
 
-.navbar .croix.close{
+.croix:hover{
+    cursor: pointer;
+}
+
+.croix.open{
     display: block; 
     z-index: 2;
 }
+
+
 
 main{
     flex: 1 0 auto;

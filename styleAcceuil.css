@@ -1,0 +1,58 @@
+main{
+    padding: 2vw;
+}
+
+main p, h2, h3{
+    color: black;
+}
+
+main h2{
+    font-size: 250%;
+    padding-bottom: 4vh;
+}
+
+main > h2 {
+    text-align: center;
+}
+
+main section{
+    padding: 1vw;
+}
+
+.mainIntro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right,#5a6cf1, #9443fe, #7c20f5);
+    border-image-slice: 1;
+    margin-bottom: 8vh;
+}
+
+.mainIntro p{
+    color: white;
+    text-align: justify;
+}
+
+.mainContenue{
+    background-color: #7c20f5;
+}
+
+.mainContenue ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.mainContenue li {
+    flex-basis: 45%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+}
+
+.mainContenue li img {
+    width: 20em;
+}
