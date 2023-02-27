@@ -40,6 +40,10 @@ main div{
     padding: 1vw;
 }
 
+main li > section{
+    margin: 1vw;
+}
+
 h3, main ul p{
     text-align: justify;
 }
@@ -62,9 +66,13 @@ main li:nth-child(odd){
     flex-direction: row-reverse;
 }
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-width: 800px) {
+    main div{
+        margin: 50px 0;
+    }
     main li {
         flex-direction: column;
+        padding: 30px;
     }
     main li:nth-child(odd) {
         flex-direction: column;
@@ -73,16 +81,17 @@ main li:nth-child(odd){
         object-fit: cover;
     }
     main li img{
-        height: 33vh;
+        width: 100%;
     }
     p{
-        font-size: 180%;
+        font-size: 150%;
     }
     h2{
-        font-size: 280%;
+        font-size: 250%;
     }
     h3{
         text-align: center;
-        font-size: 250%;
+        font-size: 230%;
+        margin-bottom: 40px;
     }
 }

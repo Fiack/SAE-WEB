@@ -28,6 +28,7 @@ main div{
     border-image: linear-gradient(to right,#5a6cf1, #9443fe, #7c20f5);
     border-image-slice: 1;
     margin-bottom: 8vh;
+    padding: 1.5em;
 }
 
 .mainIntro p{
@@ -37,10 +38,19 @@ main div{
 
 .mainIntro h3 {
     color: #f1f1f1;
+    margin-bottom: 30px;
 }
 
 .mainContenue{
-    background-color: #7c20f5;
+    background-color: #cacaca;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right,#5a6cf1, #9443fe, #7c20f5);
+    border-image-slice: 1;
+    
+}
+
+.mainContenue h3{
+    margin-bottom: 20px;
 }
 
 .mainContenue ul {
@@ -50,13 +60,73 @@ main div{
 }
 
 .mainContenue li {
-    flex-basis: 45%;
+    flex-basis: 48%;
     flex-grow: 1;
     display: flex;
     flex-direction: row-reverse;
-    padding: 10px;
+    padding: 30px 1em;
+    margin: 0 1vh;
+}
+
+.mainContenue section{
+    padding: 0.5em;
 }
 
 .mainContenue li img {
     width: 20em;
+}
+
+@media screen and (max-width: 1000px) {
+    .mainIntro{
+        flex-direction: column;
+    }
+
+    .mainIntro img{
+        flex-basis: 100%;
+        flex-grow: 1;
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .mainIntro h3{
+        text-align: center;
+        font-size: 200%;
+        margin: 30px 0 60px 0;
+    }
+
+    .mainContenue li {
+        flex-direction: column;
+        flex-basis: 100%;
+        padding: 10px 1em;
+    }
+
+    .mainContenue li img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .mainContenue h2 {
+        padding: 0;
+    }
+
+    .mainContenue h3 {
+        text-align: center;
+        font-size: 200%;
+        margin: 30px 0 60px 0;
+    }
+
+    p{
+        font-size: 150%;
+    }
+    h2{
+        font-size: 300%;
+        text-align: center;
+        padding: 0;
+        margin: 60px 0;
+    }
+
 }
