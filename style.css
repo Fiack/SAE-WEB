@@ -86,7 +86,7 @@ header h1{
 
 
 .navbar .logo{
-    height: 6vw;  
+    height: 5vw;  
     margin: 15px
 }
 
@@ -141,7 +141,7 @@ header h1{
 .homeBlanc {
     display: block;
     position: relative;
-    height: 3vw;
+    height: 2.5vw;
     margin: 15px;
 }
 
@@ -152,7 +152,7 @@ header h1{
 .homeNoir {
     display: none;
     position: relative;
-    height: 3vw;
+    height: 2.5vw;
     margin: 15px;
 }
 
@@ -164,7 +164,7 @@ header h1{
 .hamburger {
     display: block;
     position: relative;
-    height: 3vw;
+    height: 2.5vw;
     margin: 15px
 
 }
@@ -181,7 +181,7 @@ header h1{
 .croix{
     display: none;
     position: relative;
-    height: 3vw;
+    height: 2.5vw;
     margin: 15px
 }
 
@@ -250,9 +250,9 @@ footer {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-device-width: 820px) {
     main {
-        margin-top: 15vw;
+        margin-top: 16vw;
     }
     .listeCredit img{
         height: 10vw;
@@ -263,40 +263,27 @@ footer {
     .navClickable .homeNoir,
     .navClickable .homeBlanc
     {
-        height:  5vh;
+        height:  5vw;
+        margin: 25px 15px;
     }
 
     header h1{
-        font-size: 200%;
+        font-size: 5vw;
     }
 
     .navbar .logo{
-        height: 9vw;  
+        height: 7.5vw;  
         margin: 20px 30px
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-device-width: 550px) {
     header h1{
-        font-size: 170%;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    header h1{
-        font-size: 140%;
+        font-size: 4vw;
     }
 
     .navbar .logo{
         height: 7vw;  
         margin: 20px 30px
-    }
-
-    .navClickable .hamburger,
-    .navClickable .croix,
-    .navClickable .homeNoir,
-    .navClickable .homeBlanc
-    {
-        height:  4vh;
     }
 }
