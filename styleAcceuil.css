@@ -76,7 +76,7 @@ main div{
     width: 20em;
 }
 
-@media screen and (max-device-width: 1000px) {
+@media screen and ((max-device-width: 1000px) or (max-width: 1000px)){
     .mainIntro{
         flex-direction: column;
     }
@@ -90,7 +90,7 @@ main div{
 
 }
 
-@media screen and (max-device-width: 800px) {
+@media screen and ((max-device-width: 820px) or (max-width: 820px)) {
 
     .mainIntro h3{
         text-align: center;
